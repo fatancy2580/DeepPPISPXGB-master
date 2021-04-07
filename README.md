@@ -4,11 +4,17 @@ Protein-protein interaction site prediction Based on deep learning framework and
 # **system requirement** 
 DeepPPISPXGB is developed under Linux environment with python 3.7.5 Recommended RAM: > 24GB. 
 # **installation** 
+
 PyTorch==0.4.0
+
 umap-learn==0.4
+
 numpy==1.15.0
+
 scikit-learn==0.23.2
+
 xgboost==1.1.0
+
 torch==1.3.0
 
 # **Usage** 
