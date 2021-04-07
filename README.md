@@ -2,7 +2,7 @@
 Protein-protein interaction site prediction Based on deep learning framework and XGBoost Algorithm
 
 # **system requirement** 
-DeepPPISPXGB is developed under Linux environment with python 3.7.5 Recommended RAM: > 24GB. 
+DeepPPISPXGB is developed under Linux environment with python 3.7.5 Recommended RAM: > 24GB.  CUDA Version: 10.1 
 # **installation** 
 
 PyTorch==0.4.0
