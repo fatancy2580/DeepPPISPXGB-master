@@ -7,7 +7,7 @@ DeepPPISPXGB is developed under Linux environment with python 3.7.5 Recommended 
 
 PyTorch==0.4.0
 
-umap-learn==0.4
+umap-learn==0.4.6
 
 numpy==1.15.0
 
