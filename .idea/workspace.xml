@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="412626dc-d819-4343-8328-3b68da131cea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UMAP_demension.py" beforeDir="false" afterPath="$PROJECT_DIR$/UMAP_demension.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/independent_test_valid.py" beforeDir="false" afterPath="$PROJECT_DIR$/independent_test_valid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/deep_ppi.py" beforeDir="false" afterPath="$PROJECT_DIR$/models/deep_ppi.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,7 +39,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
@@ -54,7 +54,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
-  <component name="RunManager" selected="Python.UMAP_demension">
+  <component name="RunManager" selected="Python.independent_test_valid">
     <configuration name="UMAP_demension" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="DeepPPISPXGB-master" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -99,8 +99,31 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="independent_test_valid" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DeepPPISPXGB-master" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/independent_test_valid.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.independent_test_valid" />
         <item itemvalue="Python.UMAP_demension" />
         <item itemvalue="Python.independent_test" />
       </list>
@@ -129,25 +152,35 @@
       <option name="presentableId" value="Default" />
       <updated>1617765501428</updated>
       <workItem from="1617765513306" duration="10680000" />
-      <workItem from="1617795319764" duration="1764000" />
+      <workItem from="1617795319764" duration="15068000" />
     </task>
+    <task id="LOCAL-00001" summary="更新UMAP">
+      <created>1617809566138</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1617809566138</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="更新UMAP" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新UMAP" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="1641" y="22" key="#Deployment" timestamp="1617772967343">
-      <screen x="1366" y="0" width="1366" height="728" />
-    </state>
-    <state x="1641" y="22" key="#Deployment/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1617772967343" />
-    <state x="240" y="0" key="CommitChangelistDialog2" timestamp="1617809386169">
+    <state x="275" y="22" key="#Deployment" timestamp="1618043599921">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
-    <state x="240" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1617809386169" />
+    <state x="275" y="22" key="#Deployment/1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1618043599921" />
+    <state x="1641" y="22" key="#Deployment/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1617772967343" />
+    <state x="240" y="0" key="CommitChangelistDialog2" timestamp="1617809564536">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="240" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1617809564536" />
     <state x="1606" y="0" key="CommitChangelistDialog2/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1617780744533" />
     <state x="1489" y="55" key="DiffContextDialog" timestamp="1617780740681">
       <screen x="1366" y="0" width="1366" height="728" />
@@ -166,26 +199,34 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1781" y="67" key="Github.UntrackedFilesDialog/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1617779192140" />
-    <state width="1323" height="5" key="GridCell.Tab.0.bottom" timestamp="1617793958521">
-      <screen x="1366" y="0" width="1366" height="728" />
+    <state width="1323" height="222" key="GridCell.Tab.0.bottom" timestamp="1618044710955">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="222" key="GridCell.Tab.0.bottom/1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1618044710955" />
     <state width="1323" height="5" key="GridCell.Tab.0.bottom/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1617793958521" />
-    <state width="1323" height="5" key="GridCell.Tab.0.center" timestamp="1617793958521">
-      <screen x="1366" y="0" width="1366" height="728" />
+    <state width="1323" height="222" key="GridCell.Tab.0.center" timestamp="1618044710954">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="222" key="GridCell.Tab.0.center/1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1618044710954" />
     <state width="1323" height="5" key="GridCell.Tab.0.center/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1617793958521" />
-    <state width="1323" height="5" key="GridCell.Tab.0.left" timestamp="1617793958521">
-      <screen x="1366" y="0" width="1366" height="728" />
+    <state width="1323" height="222" key="GridCell.Tab.0.left" timestamp="1618044710954">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="222" key="GridCell.Tab.0.left/1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1618044710954" />
     <state width="1323" height="5" key="GridCell.Tab.0.left/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1617793958521" />
-    <state width="1323" height="5" key="GridCell.Tab.0.right" timestamp="1617793958521">
-      <screen x="1366" y="0" width="1366" height="728" />
+    <state width="1323" height="222" key="GridCell.Tab.0.right" timestamp="1618044710954">
+      <screen x="0" y="0" width="1366" height="728" />
     </state>
+    <state width="1323" height="222" key="GridCell.Tab.0.right/1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1618044710954" />
     <state width="1323" height="5" key="GridCell.Tab.0.right/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1617793958521" />
     <state x="1550" y="6" key="SettingsEditor" timestamp="1617778911488">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1550" y="6" key="SettingsEditor/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1617778911488" />
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1617809580948">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1617809580948" />
     <state x="363" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1617795323157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
@@ -204,8 +245,20 @@
     </state>
     <state x="1925" y="94" key="ftp.server.browser/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1617772965844" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/generator/data_generator.py</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/DeepPPISPXGB_master$independent_test.coverage" NAME="independent_test Coverage Results" MODIFIED="1617776868262" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/DeepPPISPXGB_master$UMAP_demension.coverage" NAME="UMAP_demension Coverage Results" MODIFIED="1617777916570" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/DeepPPISPXGB_master$independent_test_valid.coverage" NAME="independent_test_valid Coverage Results" MODIFIED="1618044710946" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

@@ -1,7 +1,6 @@
 #-*- encoding:utf8 -*-
 
-import os
-import time
+
 import sys
 
 import torch as t
@@ -36,7 +35,7 @@ class ConvsLayer(BasicModule):
         padding3 = (self.kernels[2]-1)//2
         self.conv1 = nn.Sequential()  #以字典形式按顺序添加神经网络，如下，"conv1",nn.conv1这样的形式
         self.conv1.add_module("conv1",
-            nn.Conv2d(in_channel, hidden_channels,   #in_channel = 1,hidden_channels=228,有228个卷积核，输出位500*49*228
+            nn.Conv2d(in_channel, hidden_channels,   #in_channel = 1,hidden_channels=228,有228个卷积核，输出位228*500*49
             padding=(padding1,0),
             kernel_size=(self.kernels[0],W_size))) #卷积核的大小为13*49
         self.conv1.add_module("ReLU",nn.PReLU()) # 增加激活函数： 增加网络的非线性分割能力
