@@ -18,12 +18,12 @@ from utils.config import DefaultConfig
 
 class dataSet(data.Dataset):
     def __init__(self,window_size,sequences_file=None,pssm_file=None, dssp_file=None, label_file=None, protein_list_file=None):
-        super(dataSet,self).__init__()  #继承dataSet的方法
+        super(dataSet,self).__init__()
 
 
         #读取五个文件
         self.all_sequences = []
-        for seq_file in sequences_file: #读取sequences_file里面的内容,因为有四个文件所以需要一个个遍历
+        for seq_file in sequences_file:
             with open(seq_file,"rb") as fp_seq:
                temp_seq  = pickle.load(fp_seq)
             self.all_sequences.extend(temp_seq)
