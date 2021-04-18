@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="412626dc-d819-4343-8328-3b68da131cea" name="Default Changelist" comment="更新UMAP">
-      <change afterPath="$PROJECT_DIR$/XGBoosting.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/XGBoosting_new.py" afterDir="false" />
+    <list default="true" id="412626dc-d819-4343-8328-3b68da131cea" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UMAP_demension.py" beforeDir="false" afterPath="$PROJECT_DIR$/UMAP_demension.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/generator/data_generator.py" beforeDir="false" afterPath="$PROJECT_DIR$/generator/data_generator.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/independent_test_valid.py" beforeDir="false" afterPath="$PROJECT_DIR$/independent_test_valid.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/XGBoosting.py" beforeDir="false" afterPath="$PROJECT_DIR$/XGBoosting.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +181,7 @@
       <workItem from="1617765513306" duration="10680000" />
       <workItem from="1617795319764" duration="22136000" />
       <workItem from="1618191316933" duration="16060000" />
-      <workItem from="1618710513090" duration="12021000" />
+      <workItem from="1618710513090" duration="12915000" />
     </task>
     <task id="LOCAL-00001" summary="更新UMAP">
       <created>1617809566138</created>
@@ -201,7 +197,21 @@
       <option name="project" value="LOCAL" />
       <updated>1618139309603</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="XGB">
+      <created>1618733326192</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1618733326192</updated>
+    </task>
+    <task id="LOCAL-00004" summary="更新UMA">
+      <created>1618733348181</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1618733348181</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +219,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="更新UMAP" />
-    <option name="LAST_COMMIT_MESSAGE" value="更新UMAP" />
+    <MESSAGE value="XGB" />
+    <MESSAGE value="更新UMA" />
+    <option name="LAST_COMMIT_MESSAGE" value="更新UMA" />
   </component>
   <component name="WindowStateProjectService">
     <state x="275" y="22" key="#Deployment" timestamp="1618043599921">
@@ -217,11 +229,11 @@
     </state>
     <state x="275" y="22" key="#Deployment/1366.0.1366.728/0.0.1366.728@0.0.1366.728" timestamp="1618043599921" />
     <state x="1641" y="22" key="#Deployment/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1617772967343" />
-    <state x="1606" y="0" key="CommitChangelistDialog2" timestamp="1618733323604">
+    <state x="1606" y="0" key="CommitChangelistDialog2" timestamp="1618733346324">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="240" y="0" key="CommitChangelistDialog2/0.0.1366.728@0.0.1366.728" timestamp="1617809564536" />
-    <state x="1606" y="0" key="CommitChangelistDialog2/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1618733323604" />
+    <state x="1606" y="0" key="CommitChangelistDialog2/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1618733346324" />
     <state x="1489" y="55" key="DiffContextDialog" timestamp="1617780740681">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
@@ -267,19 +279,20 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1550" y="6" key="SettingsEditor/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1618139530988" />
-    <state x="275" y="97" key="Vcs.Push.Dialog.v2" timestamp="1617809580948">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2" timestamp="1618733903904">
+      <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="275" y="97" key="Vcs.Push.Dialog.v2/0.0.1366.728@0.0.1366.728" timestamp="1617809580948" />
+    <state x="1641" y="97" key="Vcs.Push.Dialog.v2/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1618733903904" />
     <state x="363" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1617795323157">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="363" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1617795323157" />
-    <state x="1841" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618139324530">
+    <state x="1841" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1618733523077">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="475" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1366.728@0.0.1366.728" timestamp="1617809320658" />
-    <state x="1841" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1618139324530" />
+    <state x="1841" y="281" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/1366.0.1366.728/0.0.1366.728@1366.0.1366.728" timestamp="1618733523077" />
     <state x="1790" y="94" key="com.jetbrains.plugins.remotesdk.ui.RemoteMappingsConfiguration" timestamp="1617765645194">
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
