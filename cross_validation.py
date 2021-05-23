@@ -17,13 +17,13 @@ from sklearn.metrics import roc_curve,auc,precision_recall_curve,average_precisi
 
 def getnewmodel(models,seq, dssp, pssm, local_features):
     models.eval()
-    shapes = seq.data.shape  # shape指的是序列的shape[32,1,500,20]
+    shapes = seq.data.shape 
     features = seq.view(shapes[0], shapes[1] * shapes[2] * shapes[3])
-    features = models.seq_layers(features)  # 将稀疏矩阵转为密集矩阵，放入全连接层
-    features = features.view(shapes[0], shapes[1], shapes[2], shapes[3])  # 再把序列的特征转为四维，因为pssm和dssp是四维的
+    features = models.seq_layers(features)  
+    features = features.view(shapes[0], shapes[1], shapes[2], shapes[3])  
 
-    features = t.cat((features, dssp, pssm), 3)  # 将序列和其他两个特征进行拼接
-    features = models.multi_CNN(features)  # 得到的特征是二维的
+    features = t.cat((features, dssp, pssm), 3) 
+    features = models.multi_CNN(features)  
     features = t.cat((features, local_features), 1)
     return features
 
@@ -90,8 +90,8 @@ def plotcrossvalidationROCurve(x_train, y_train):
         fpr, tpr, _ = roc_curve(y_train[valid], predict_pos_proba)
         roc = auc(fpr, tpr)
         AUROC = (round(roc, 3))
-        tpr_sum.append(np.interp(mean_fpr, fpr, tpr))  # 得到的是Y的值即tpr
-        tpr_sum[-1][0] = 0.0  # 最后一行的第一个元素赋值为  0,从0开始取100个数
+        tpr_sum.append(np.interp(mean_fpr, fpr, tpr))  
+        tpr_sum[-1][0] = 0.0  
         AUROC_sum.append(AUROC)
         plt.plot(fpr, tpr, lw=1, alpha=0.7, label='ROC fold %d (AUROC = %0.3f)' % (i, AUROC))
         i += 1
@@ -100,12 +100,12 @@ def plotcrossvalidationROCurve(x_train, y_train):
              label='Chance', alpha=.8)
 
     mean_tpr = np.mean(tpr_sum, axis=0)
-    mean_tpr[-1] = 1.0  # 最后一列的值设置为-1,起始为0，终止为1保证每个点都能够取到
+    mean_tpr[-1] = 1.0  
     mean_auc = auc(mean_fpr, mean_tpr)
-    std_auc = np.std(AUROC_sum)  # np.std表示用来求解标准差，误差来自于插值，并不是所有的点都取到了
+    std_auc = np.std(AUROC_sum)  
     plt.plot(mean_fpr, mean_tpr, color='lawngreen',
              label=r'Mean ROC (AUROC = %0.3f $\pm$ %0.3f)' % (mean_auc, std_auc),
-             lw=2, alpha=.8)  # 在matplotlib中$\pm$表示加减的意思
+             lw=2, alpha=.8) 
     plt.xlim([-0.05, 1.05])
     plt.ylim([-0.05, 1.05])
     plt.xlabel('False Positive Rate')
@@ -118,7 +118,6 @@ def plotcrossvalidationROCurve(x_train, y_train):
 
 if __name__ == '__main__':
     path_dir = "/home/xyj/Project/DeepPPISP-master/checkpoints/deep_ppi_saved_models"
-    #需要修改
     model_file = "{0}/DeepPPI_model_epoch1_train1.dat".format(path_dir)
     train_data = ["dset186","dset164","dset72"]
 
@@ -138,7 +137,7 @@ if __name__ == '__main__':
     test_list_file = '/home/xyj/Project/DeepPPISP-master/data_cache/testing_list.pkl'
 
 
-    #加载训练样本
+
     with open('/home/xyj/Project/DeepPPISP-master/indexes/train_index_epoch1_train1.pkl', "rb") as ti:
         train_index = pickle.load(ti)
 
