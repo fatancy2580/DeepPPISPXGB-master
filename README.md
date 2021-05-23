@@ -19,15 +19,7 @@ torch==1.3.0
 
 # **Usage** 
 
-In this GitHub project, we give a demo to show how it works. 
-The three benchmark datasets are given, i.e., Dset_186, Dset_72 and PDBset_164.
-Dset_186 consists of 186 protein sequences with the resolution less than 3.0 Å with sequence homology less than 25%.
-Dset_72 and PDBset_164 were constructed as the same as Dset_186. Dset_72 has 72 protein sequences and PDBset_164 consists of 164 protein sequences. 
-These protein sequences in the three benchmark datasets have been annotated. 
-Thus, we have 422 different annotated protein sequences. We remove two protein sequences for they do not have PSSM file.
-The PSSMs, raw sequences, secondary structures and labels are given in data_cache folder. 
-You can split the raw three datasets by yourself. In our study, we use the 83% as training dataset (350 protein sequences) and 17% as testing dataset (70 protein sequence). 
-The detail of the three datasets and dataset division can see the paper and the code.
+The study of protein-protein interaction（PPIs）is helpful to understand cell function and develop drugs.However, conventional experimental methods of identifiing protein-protein interaction (PPI) sites is time-consuming and expensive.Therefore, many deep learning methods were used for predicting PPI sites.In this work, Sliding window is used for extracting local features,which can make full use of features of neighbors of a target amino acid.TextCNN was used for extracting the global features of the whole protein sequence. The deep learning model model trained firstly and the trained model served as feature extractor.The XGBoost model was used for predicting protein-protein interaction sites.The new deeping framework named DeepPPISPXGB.
 
 # **The architecture of DeepPPISPXGB** 
 ![image](https://user-images.githubusercontent.com/52057084/119248317-eed63f80-bbc2-11eb-91a8-750f42eef47a.png)
