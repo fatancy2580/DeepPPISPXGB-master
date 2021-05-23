@@ -29,5 +29,8 @@ The PSSMs, raw sequences, secondary structures and labels are given in data_cach
 You can split the raw three datasets by yourself. In our study, we use the 83% as training dataset (350 protein sequences) and 17% as testing dataset (70 protein sequence). 
 The detail of the three datasets and dataset division can see the paper and the code.
 
-# **DeepPPISPXGB model architecture** 
-![image](https://user-images.githubusercontent.com/52057084/113835819-e23a8b00-97be-11eb-8fa7-12984acf2db1.png)
+# **The architecture of DeepPPISPXGB** 
+![image](https://user-images.githubusercontent.com/52057084/119248317-eed63f80-bbc2-11eb-91a8-750f42eef47a.png)
+# **The network structure of DeepPPISP** 
+![image](https://user-images.githubusercontent.com/52057084/119248335-0f05fe80-bbc3-11eb-926a-36f4ca1899c1.png)
+
