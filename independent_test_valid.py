@@ -17,13 +17,13 @@ from sklearn.metrics import roc_curve,auc,precision_recall_curve,average_precisi
 
 def getnewmodel(model,seq, dssp, pssm, local_features):
     model.eval()
-    shapes = seq.data.shape  # shape指的是序列的shape[32,1,500,20]
+    shapes = seq.data.shape 
     features = seq.view(shapes[0], shapes[1] * shapes[2] * shapes[3])
-    features = model.seq_layers(features)  # 将稀疏矩阵转为密集矩阵，放入全连接层
-    features = features.view(shapes[0], shapes[1], shapes[2], shapes[3])  # 再把序列的特征转为四维，因为pssm和dssp是四维的
+    features = model.seq_layers(features) 
+    features = features.view(shapes[0], shapes[1], shapes[2], shapes[3])  
 
-    features = t.cat((features, dssp, pssm), 3)  # 将序列和其他两个特征进行拼接
-    features = model.multi_CNN(features)  # 得到的特征是二维的
+    features = t.cat((features, dssp, pssm), 3)  
+    features = model.multi_CNN(features)  
     features = t.cat((features, local_features), 1)
     return features
 def trainfunction(train_loader,model):
@@ -44,7 +44,7 @@ def trainfunction(train_loader,model):
                 pssm_var = Variable(pssm_data.float())
                 dssp_var = Variable(dssp_data.float())
                 local_var = Variable(local_data.float())
-                target_var = Variable(label.float())  # 就是标签
+                target_var = Variable(label.float()) 
                 print(target_var)
 
 
@@ -120,7 +120,6 @@ def plotAUPRCandAUROCcurce_table(x_train, y_train, x_test, y_test,valid_feature,
     ax2.legend(loc='lower right')
     ax2.plot([0, 1], [0, 1], 'r--')
     plt.show()
-    #绘制表格
     x = PrettyTable(["validation_mode", "ACC", "Precision", "Recall", "F1", "MCC", "Specificity", "AUROC", "AUPRC"])
     x.add_row(["independence_test", acc, prec, sn, F1, mcc, sp, AUROC, AUPRC])
     x.add_row(["independence_valid", acc_v, prec_v, sn_v, F1_v, mcc_v, sp_v, AUROC_v, AUPRC_v])
@@ -132,7 +131,6 @@ def plotAUPRCandAUROCcurce_table(x_train, y_train, x_test, y_test,valid_feature,
 if __name__ == '__main__':
 
     path_dir = "/home/xyj/Project/DeepPPISP-master/checkpoints/deep_ppi_saved_models"
-    #需要修改
     model_file = "{0}/DeepPPI_model_epoch1_train1.dat".format(path_dir)
     train_data = ["dset186","dset164","dset72"]
 
@@ -153,7 +151,6 @@ if __name__ == '__main__':
     test_list_file = '/home/xyj/Project/DeepPPISP-master/data_cache/testing_list.pkl'
 
 
-    #加载训练样本
     with open('/home/xyj/Project/DeepPPISP-master/indexes/train_index_epoch1_train1.pkl', "rb") as ti:
         train_index = pickle.load(ti)
     with open('/home/xyj/Project/DeepPPISP-master/indexes/eval_index_epoch1_train1.pkl', "rb") as ei:
