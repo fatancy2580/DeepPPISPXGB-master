@@ -45,7 +45,7 @@ def trainfunction(train_loader,newmodel):
                 pssm_var = Variable(pssm_data.float())
                 dssp_var = Variable(dssp_data.float())
                 local_var = Variable(local_data.float())
-                target_var = Variable(label.float())  # 就是标签
+                target_var = Variable(label.float()) 
                 print(target_var)
 
         output = getnewmodel(newmodel,seq_var, dssp_var, pssm_var, local_var)
