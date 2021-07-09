@@ -106,7 +106,7 @@ def calculateEvaluationMetrics(x_train, y_train,x_test,y_test):
 
 
 
-    #进行画AUC图
+    
     fig = plt.figure(figsize=(5, 4))
     ax1 = fig.add_subplot(111, title='ROC curve',ylabel='True Positive Rate', xlabel='False Positive Rate')
     ax1.plot(fpr_X, tpr_X, color='lawngreen', label='Xgboost(AUR0C:%0.3f)' % AUROC_X)
@@ -121,7 +121,7 @@ def calculateEvaluationMetrics(x_train, y_train,x_test,y_test):
     plt.savefig('/home/ubuntu/MyFiles/DeepPPISPXGB/graph/AUROC_machine.pdf')
     plt.show()
 
-    #画prc图
+    
     fig = plt.figure(figsize=(5, 4))
     ax2 = fig.add_subplot(111, title='Precision-Recall curve', ylabel='precision', xlabel="recall")
     ax2.plot(recall_X, precision_X, color='lawngreen', label='Xgboost(AUPRC:%0.3f)' % AUPRC_X)
