@@ -19,9 +19,12 @@ torch==1.3.0
 
 # **data**
 
-global&local_feature_train_set.csv: this CSV file contains a training set for combining global and local feature pretraining, which size is 65869*1027
+global&local_feature_train_set.csv: this CSV file contains a training set for combining global and local feature pretraining, which size is 65869*1027 
+
 global&local_feature_test_set.csv：this CSV file contains a testing set for combining global and local feature pretraining, which size is 11791*1027
+
 local_feature_train_set.csv：this CSV file contains a training set for local feature pretraining, which size is 65869*343
+
 local_feature_test_set.csv: this CSV file contains a testing set for local feature pretraining, which size is 11791*343
 
 
