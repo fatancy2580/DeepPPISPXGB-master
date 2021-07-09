@@ -1,5 +1,5 @@
 # **DeepPPISPXGB** 
-Protein-protein interaction site prediction Based on deep learning framework and XGBoost Algorithm
+A Deep Learning and XGBoost-based Method for Predicting Protein-protein Interaction Sites 
 
 # **system requirement** 
 DeepPPISPXGB is developed under Linux environment with python 3.7.5 Recommended RAM: > 24GB.  CUDA Version: 10.1 
@@ -19,10 +19,10 @@ torch==1.3.0
 
 # **Usage** 
 
-The study of protein-protein interaction（PPIs）is helpful to understand cell function and develop drugs.However, conventional experimental methods of identifiing protein-protein interaction (PPI) sites is time-consuming and expensive.Therefore, many deep learning methods were used for predicting PPI sites.In this work, Sliding window is used for extracting local features,which can make full use of features of neighbors of a target amino acid.TextCNN was used for extracting the global features of the whole protein sequence. The deep learning model model trained firstly and the trained model served as feature extractor.The XGBoost model was used for predicting protein-protein interaction sites.The new deeping framework named DeepPPISPXGB.
+Research into protein-protein interactions is help us better understand cellular function and develop drugs. Protein-protein interactions are usually identified by determining the protein-protein interaction sites. With the development of deep learning algorithms, it has become a crucial method to predict protein-protein interaction sites. In this work, we have presented a deep learning and XGBoost-based method for predicting protein-protein interaction sites, and the method named DeepPPISP-XGB. The deep learning model served as feature extractor to remove redundant information of the protein sequence that was encoded. The XGBoost classifier was used for predicting protein-protein interaction sites on the data that was preprocessed by the feature extractor. The prediction performance show that our method is superior to other state-of-the-art methods. In the independent test, the proposed method achieved area under the receiver operating characteristic curve of 0.681, recall of 0.624 and area under the precision-recall curve of 0.339. In the 10-fold cross validation, area under the receiver operating characteristic curve reached 0.741. In addition, we compared the prediction performance of the XGBoost classifier with another popular classifier on independent test. The prediction performance demonstrate the superiority of our classifier. Ultimately, we validate global features are used for improving prediction performance.
 
 # **The architecture of DeepPPISPXGB** 
-![image](https://user-images.githubusercontent.com/52057084/119248317-eed63f80-bbc2-11eb-91a8-750f42eef47a.png)
-# **The network structure of DeepPPISP** 
-![image](https://user-images.githubusercontent.com/52057084/119248335-0f05fe80-bbc3-11eb-926a-36f4ca1899c1.png)
+![image](https://user-images.githubusercontent.com/52057084/125041958-eaf77180-e0cb-11eb-8080-6c4314d6e148.png)
+
+
 
