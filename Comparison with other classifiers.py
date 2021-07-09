@@ -139,8 +139,8 @@ def calculateEvaluationMetrics(x_train, y_train,x_test,y_test):
 
 
 if __name__ == '__main__':
-    file1 = sys.argv[1]
-    file2 = sys.argv[2]
+    file1 = sys.argv[1]  #training set
+    file2 = sys.argv[2]  #testing set
     protein_train = pd.read_csv(file1)
     xtrain = protein_train.iloc[:, 1:1028]
     ytrain = protein_train.iloc[:, -1]
