@@ -17,6 +17,16 @@ xgboost==1.1.0
 
 torch==1.3.0
 
+# **data**
+
+global&local_feature_train_set.csv: this CSV file contains a training set for combining global and local feature pretraining, which size is 65869*1027
+global&local_feature_test_set.csv：this CSV file contains a testing set for combining global and local feature pretraining, which size is 11791*1027
+local_feature_train_set.csv：this CSV file contains a training set for local feature pretraining, which size is 65869*343
+local_feature_test_set.csv: this CSV file contains a testing set for local feature pretraining, which size is 11791*343
+
+
+URL: https://drive.google.com/drive/folders/1RzX6NcuTjIOmstZO47EEmA-cIoLCo3OJ?usp=sharing
+
 # **Usage** 
 
 Research into protein-protein interactions is help us better understand cellular function and develop drugs. Protein-protein interactions are usually identified by determining the protein-protein interaction sites. With the development of deep learning algorithms, it has become a crucial method to predict protein-protein interaction sites. In this work, we have presented a deep learning and XGBoost-based method for predicting protein-protein interaction sites, and the method named DeepPPISP-XGB. The deep learning model served as feature extractor to remove redundant information of the protein sequence that was encoded. The XGBoost classifier was used for predicting protein-protein interaction sites on the data that was preprocessed by the feature extractor. The prediction performance show that our method is superior to other state-of-the-art methods. In the independent test, the proposed method achieved area under the receiver operating characteristic curve of 0.681, recall of 0.624 and area under the precision-recall curve of 0.339. In the 10-fold cross validation, area under the receiver operating characteristic curve reached 0.741. In addition, we compared the prediction performance of the XGBoost classifier with another popular classifier on independent test. The prediction performance demonstrate the superiority of our classifier. Ultimately, we validate global features are used for improving prediction performance.
