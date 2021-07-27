@@ -4,6 +4,7 @@
 from main import constructXGBoost,calculateEvaluationMetrics
 import pandas as pd
 import matplotlib.pyplot as plt
+import sys
 
 def plot_roc_prc_curce(x_train, y_train,  x_test, y_test,local_xtrain,local_ytrain,local_xtest,local_ytest):
 
@@ -36,17 +37,21 @@ def plot_roc_prc_curce(x_train, y_train,  x_test, y_test,local_xtrain,local_ytra
 
 
 if __name__=='__main__':
-    global_train = pd.read_csv(r'/home/xyj/Project/DeepPPISP-master/get_data/second_train_new_epoch1_train1.csv')
+    file1 = sys.argv[1] # global and local feature training set
+    file2 = sys.argv[2] # global and local feature testing set
+    file3 = sys.argv[3] # local feature training set
+    file4 = sys.argv[4] # loacal feature testing set
+    global_train = pd.read_csv(file1)
     xtrain = global_train.iloc[:, 1:1028]  
     ytrain = global_train.iloc[:, -1]
-    global_test = pd.read_csv(r'/home/xyj/Project/DeepPPISP-master/get_data/second_test_new_epoch1_train1.csv')
+    global_test = pd.read_csv(file2)
     xtest = global_test.iloc[:, 1:1028]  
     ytest = global_test.iloc[:, -1]
 
-    local_train = pd.read_csv(r'/home/xyj/Project/DeepPPISP-master/get_data/local_feature_train.csv')
+    local_train = pd.read_csv(file3)
     local_xtrain = local_train.iloc[:, 1:344]  
     local_ytrain = local_train.iloc[:, -1]
-    local_test = pd.read_csv(r'/home/xyj/Project/DeepPPISP-master/get_data/local_feature_test.csv')
+    local_test = pd.read_csv(file4)
     local_xtest = local_test.iloc[:, 1:344]  
     local_ytest = local_test.iloc[:, -1]
 
