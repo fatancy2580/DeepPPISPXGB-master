@@ -5,7 +5,6 @@ A Deep Learning and XGBoost-based Method for Predicting Protein-protein Interact
 DeepPPISPXGB is developed under Linux environment with python 3.7.5 Recommended RAM: > 24GB.  CUDA Version: 10.1 
 # **installation** 
 
-PyTorch==0.4.0
 
 umap-learn==0.4.6
 
@@ -15,7 +14,6 @@ scikit-learn==0.23.2
 
 xgboost==1.1.0
 
-torch==1.3.0
 
 # **data**
 
