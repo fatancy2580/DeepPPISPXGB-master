@@ -2,7 +2,10 @@ import umap
 import pandas as pd
 import  matplotlib.pyplot as plt
 import numpy as np
-protein_train = pd.read_csv(r'/home/xyj/Project/DeepPPISP-master/get_data/second_train_new_epoch1_train1.csv')
+import sys
+
+training_set = sys.argv[1]
+protein_train = pd.read_csv(training_set)
 xtrain = protein_train.iloc[:, 1:1028]
 print(protein_train.iloc[:,0:3])
 ytrain = protein_train.iloc[:, -1]
