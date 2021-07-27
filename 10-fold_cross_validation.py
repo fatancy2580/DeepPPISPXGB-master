@@ -11,7 +11,8 @@ from sklearn.metrics import roc_curve,auc
 import pandas as pd
 from prettytable import  PrettyTable
 
-protein_train = pd.read_csv("get_data/second_train_new_epoch1_train1.csv")
+training_set = sys.argv[1]
+protein_train = pd.read_csv(training_set)
 
 x_train = protein_train.iloc[:,1:1028]
 y_train = protein_train.iloc[:,-1]
