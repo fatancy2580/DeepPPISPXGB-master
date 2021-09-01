@@ -54,4 +54,4 @@ plt.xlabel('False Positive Rate')
 plt.ylabel('True Positive Rate')
 plt.title('ROC Curves:10-fold cross-validation')
 plt.legend(loc="lower right", prop={"size": 6})
-plt.savefig('/home/ubuntu/MyFiles/DeepPPISPXGB/graph/10-fold_ROC_Curves.pdf')   #
+plt.show() #
