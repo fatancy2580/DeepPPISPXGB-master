@@ -32,7 +32,7 @@ def plot_roc_prc_curce(x_train, y_train,  x_test, y_test,local_xtrain,local_ytra
     plt.ylim(0, 1)
     ax2.legend(loc='lower right', fontsize=7)
     ax2.plot([0, 1], [1, 0], 'r--')
-    plt.savefig('/home/xyj/Project/DeepPPISPXGB/graph/global_local_AUPRC.pdf')
+    plt.show()
 
 
 
