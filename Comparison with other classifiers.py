@@ -133,7 +133,7 @@ def calculateEvaluationMetrics(x_train, y_train,x_test,y_test):
     plt.ylim(0,1)
     ax2.legend(loc='upper right')
     ax2.plot([0, 1], [1, 0], 'r--')
-    plt.savefig('/home/ubuntu/MyFiles/DeepPPISPXGB/graph/AUPRC_machine.pdf')
+    plt.show()
 
 
 
