@@ -64,8 +64,8 @@ def plotAUPRCandAUROCcurce_table(x_train, y_train, x_test, y_test):
 
 
 if __name__ == '__main__':
-    train_data_sys = sys.argv[1]
-    test_data_sys = sys.argv[2]
+    train_data_sys = sys.argv[1] #raw_feature_training_set
+    test_data_sys = sys.argv[2]  #raw_feature_testing_set
     train_data = pd.read_csv(train_data_sys)
     test_data = pd.read_csv(test_data_sys)
     x_trian = np.array(train_data.iloc[:,:-1])
