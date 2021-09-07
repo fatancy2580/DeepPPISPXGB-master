@@ -36,7 +36,8 @@ URL: https://data.mendeley.com/drafts/9tft3vz5tm
 The knowledge about protein-protein interactions is beneficial to understand cellular mechanism. Protein-protein interactions are usually determined according to their protein-protein interaction sites. Due to limitation of current techniques, it is still a challenging task to detect protein-protein interaction sites. In this article, we presented a deep learning and XGBoost-based method (called DeepPPISP-XGB) for predicting protein-protein interaction sites. The deep learning model served as feature extractor to remove redundant information of the protein sequences. The Extreme Gradient Boosting algorithm was used to construct a classifier for predicting protein-protein interaction sites. The DeepPPISP-XGB achieved area under the receiver operating characteristic curve of 0.681, a recall of 0.624 and area under the precision-recall curve of 0.339, being competitive with the state-of-the-art methods. We also validate the positive role of global features in predicting protein-protein interaction sites. 
 
 # **The architecture of DeepPPISPXGB** 
-[修改流程图.pptx](https://github.com/fatancy2580/DeepPPISPXGB-master/files/7119663/default.pptx)
+![修改流程图](https://user-images.githubusercontent.com/52057084/132301167-9fdf40d3-2a86-4724-8c6b-88d0c3ded642.jpg)
+
 
 
 
