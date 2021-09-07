@@ -38,6 +38,8 @@ The knowledge about protein-protein interactions is beneficial to understand cel
 # **The architecture of DeepPPISPXGB** 
 ![修改流程图](https://user-images.githubusercontent.com/52057084/132301167-9fdf40d3-2a86-4724-8c6b-88d0c3ded642.jpg)
 
+The architecture of DeepPPISP-XGB model. (A) Illustration of the DeepPPISP-XGB workflow, which consists of three modules that include extracting feature, training classifier, predicting PPIS. (B) The architecture of DeepPPISP model, which contain embedding layer, different scale convolutions, fully connected layers and output layer.
+
 
 
 
