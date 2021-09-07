@@ -80,9 +80,9 @@ if __name__ == '__main__':
     file1 = sys.argv[1]
     file2 = sys.argv[2]
     protein_train = pd.read_csv(file1)
-    xtrain = protein_train.iloc[:, 1:-1]
-    ytrain = protein_train.iloc[:, -1]
     protein_test = pd.read_csv(file2)
-    xtest = protein_test.iloc[:, 1:-1]
-    ytest = protein_test.iloc[:, -1]
+    xtrain = np.array(protein_train.iloc[:, 1:-1])
+    ytrain = np.array(protein_train.iloc[:, -1]).ravel()
+    xtest = np.array(protein_test.iloc[:, 1:-1])
+    ytest = np.array(protein_test.iloc[:, -1]).ravel()
     plotAUPRCandAUROCcurce_table(xtrain, ytrain, xtest, ytest)
