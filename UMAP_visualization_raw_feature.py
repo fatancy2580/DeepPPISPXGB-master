@@ -1,5 +1,5 @@
-# FIGURE 2 | Training data visualization of Raw features through UMAP
-# FIGURE 3 | Testing data visualization of Raw features through UMAP 
+# FIGURE 4 | Training data visualization of Raw features through UMAP
+# FIGURE 5 | Testing data visualization of Raw features through UMAP 
 
 
 import umap
