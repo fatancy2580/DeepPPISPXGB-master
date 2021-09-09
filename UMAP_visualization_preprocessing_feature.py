@@ -1,5 +1,6 @@
-#FIGURE 2 | Training data visualization of preprocessing features through UMAP
-#FIGURE 3 | Testing data visualization of preprocessing features through UMAP 
+# FIGURE 4 | Qualitative evaluation of preprocessing features using UMAP on training sets
+# FIGURE 5 | Qualitative evaluation of preprocessing features using UMAP on testing data 
+
 
 import umap
 import sys
