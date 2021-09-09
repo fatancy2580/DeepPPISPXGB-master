@@ -1,4 +1,5 @@
-#Visual preprocessing feature
+#FIGURE 2 | Training data visualization of preprocessing features through UMAP
+#FIGURE 3 | Testing data visualization of preprocessing features through UMAP 
 
 import umap
 import sys
