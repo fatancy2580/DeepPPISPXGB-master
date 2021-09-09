@@ -14,15 +14,13 @@ from prettytable import  PrettyTable
 training_set = sys.argv[1]   # training set
 protein_train = pd.read_csv(training_set)
 
-x_train = protein_train.iloc[:,1:1028]
+x_train = protein_train.iloc[:,1:1028]  #Contain row index
 y_train = protein_train.iloc[:,-1]
 x_train = np.array(x_train)
 y_train = np.array(y_train)
 fpr_sum = []
 tpr_sum = []
-recall_sum = []
-mean_fpr = np.linspace(0, 1, 1000)
-mean_recall = np.linspace(0, 1, 10000)
+mean_fpr = np.linspace(0, 1, 1000))
 AUROC_sum = []
 i = 1
 cv = StratifiedKFold(n_splits=10)
