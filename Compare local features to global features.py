@@ -1,5 +1,6 @@
 # Verify the importance of global features
-
+# The ROC curves of the local features and the hybrid features. The green curve is ROC curves of local features and the blue curve is ROC curve of hybrid features. 
+#The red dotted line is a control line on which AUROC = 0.5.
 
 from main import constructXGBoost,calculateEvaluationMetrics
 import pandas as pd
@@ -42,17 +43,17 @@ if __name__=='__main__':
     file3 = sys.argv[3] # local feature training set
     file4 = sys.argv[4] # loacal feature testing set
     global_train = pd.read_csv(file1)
-    xtrain = global_train.iloc[:, 1:1028]  
+    xtrain = global_train.iloc[:, 1:-1]  #Contain row index
     ytrain = global_train.iloc[:, -1]
     global_test = pd.read_csv(file2)
-    xtest = global_test.iloc[:, 1:1028]  
+    xtest = global_test.iloc[:, 1:-1]  #Contain row index
     ytest = global_test.iloc[:, -1]
 
     local_train = pd.read_csv(file3)
-    local_xtrain = local_train.iloc[:, 1:344]  
+    local_xtrain = local_train.iloc[:, 1:-1]   #Contain row index
     local_ytrain = local_train.iloc[:, -1]
     local_test = pd.read_csv(file4)
-    local_xtest = local_test.iloc[:, 1:344]  
+    local_xtest = local_test.iloc[:, 1:-1]  #Contain row index
     local_ytest = local_test.iloc[:, -1]
 
     plot_roc_prc_curce(xtrain,ytrain,xtest,ytest,local_xtrain,local_ytrain,local_xtest,local_ytest)
