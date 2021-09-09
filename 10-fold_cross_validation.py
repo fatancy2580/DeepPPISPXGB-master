@@ -1,4 +1,7 @@
 # The 10-fold cross validation of training set
+#The ROC curves of 10-fold cross validation. The minimum AUROC value cross validation is 0.730 at the first fold.
+#The maximum value of the cross validation is 0.752 at the tenth fold. The green line represents the ROC curve of the cross validation mean. 
+#The mean value of AUROC is 0.741. The red dotted line is a control line on which AUROC = 0.5.
 
 from main import  calculateEvaluationMetrics
 import numpy as np
