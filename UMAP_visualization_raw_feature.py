@@ -1,6 +1,5 @@
-# FIGURE 4 | Training data visualization of Raw features through UMAP
-# FIGURE 5 | Testing data visualization of Raw features through UMAP 
-
+# FIGURE 2 | Qualitative evaluation of raw features using UMAP on training sets
+# FIGURE 3 | Qualitative evaluation of raw features using UMAP on testing data 
 
 import umap
 import sys
